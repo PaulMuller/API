@@ -9,6 +9,7 @@ The database helps users to do the obligatory step of their due diligence before
 The API allows users to get information on about 300 projects running on different chains: Ethereum, Binance Smart Chain, HECO, Polygon, Fantom, Avax, Harmony, xDAI, OKExChain, Polkadot. And the database is being systematically replenished with projects built on newly developed, innovative and more scalable blockchain solutions.  
 
 **The information available with the API includes:**
+
 Project name
 Token ticker and address
 Chain name
