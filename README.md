@@ -42,10 +42,10 @@ Method: POST
 
 Body:
 
-{
-  “username”: “string”
-  “email”: “string”
-}
+{ <br/>
+  “username”: “string” <br/>
+  “email”: “string” <br/>
+} <br/>
 
 **Response example:** 
 
