@@ -37,15 +37,18 @@ In order to use the API, you first need to register as a user and receive an ind
 **Registration request example:**
 
 URL: https://api.safe.defiyield.app/user/register
+
 Method: POST
 
 Body:
+
 {
   “username”: “string”
   “email”: “string”
 }
 
 **Response example:** 
+
 {
   "message": "Registration successful.",
   "status": true,
@@ -66,6 +69,7 @@ URL: https://api.safe.defiyield.app/audit/list
 Method: POST
 
 Headers:
+
 Authorization: Bearer ${yourToken}
 
 Body:{}
@@ -101,6 +105,7 @@ URL: https://api.safe.defiyield.app/audit/address
 Method: POST
 
 Headers:
+
 Authorization: Bearer ${yourToken}
 
 Body:
@@ -113,6 +118,7 @@ Body:
 
 
 **Response example:** 
+
  [
    {
     "id": 303,
