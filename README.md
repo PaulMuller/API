@@ -1,6 +1,4 @@
-# API Documentation
-
-Smart Contract Audit Web Archive Public API Documentation
+# Smart Contract Audit Web Archive Public API Documentation
 
 Being a pioneer in providing independent smart contract security audits and one of the leading DeFi projects promoting the highest security standards for the industry, DeFiYield made the next step towards making the DeFi space safer for everyone - released the unique audit database and the Safe API.  
 
@@ -10,7 +8,7 @@ The database helps users to do the obligatory step of their due diligence before
 
 The API allows users to get information on about 300 projects running on different chains: Ethereum, Binance Smart Chain, HECO, Polygon, Fantom, Avax, Harmony, xDAI, OKExChain, Polkadot. And the database is being systematically replenished with projects built on newly developed, innovative and more scalable blockchain solutions.  
 
-The information available with the API includes:
+**The information available with the API includes:**
 Project name
 Token ticker and address
 Chain name
@@ -28,14 +26,14 @@ Thus, the ability to see different security estimation results and compare them 
 
 To provide comparability of security auditing results featured by different auditors for each project, DeFiYield decided to show summaries in form of the numbers of issues found by each auditor, excluding already fixed issues with the consent of both parties - the auditors and the projects, which can be seen in the reports. But this metric doesn’t fully reflect if a DeFi project is safe to invest in. To get the complete understanding of all possible risks related to interaction with the project, it’s necessary to fully review the audit reports, taking their methodology into consideration.  
 
-How to use the API 
+## How to use the API 
 
 In order to use the API, you first need to register as a user and receive an individual token. This token will allow making requests for authorization by the Bearer authentication type in the future.
 
 
-User registration
+### User registration
 
-Registration request example:
+**Registration request example:**
 
 URL: https://api.safe.defiyield.app/user/register
 Method: POST
@@ -46,7 +44,7 @@ Body:
   “email”: “string”
 }
 
-Response example: 
+**Response example:** 
 {
   "message": "Registration successful.",
   "status": true,
@@ -57,11 +55,11 @@ Response example:
 After the registration is completed, you will receive the token enabling further requests for other API endpoints.
 
 
-Audit list
+## Audit list
 
 Calling the audit endpoint returns the list of audits.
 
-Audit list request example:
+**Audit list request example:**
 
 URL: https://api.safe.defiyield.app/audit/list
 Method: POST
@@ -72,7 +70,7 @@ Authorization: Bearer ${yourToken}
 Body:{}
 
 
-Response example: 
+**Response example:** 
 
 [
   {
@@ -91,12 +89,12 @@ Response example:
 ]
 
 
-Audits by token addresses
+## Audits by token addresses
 
 This endpoint requires a token address(es) and returns a list of audits available for the requested address(es).
 
 
-Request example for audits by token addresses:
+**Request example for audits by token addresses:**
 
 URL: https://api.safe.defiyield.app/audit/address
 Method: POST
@@ -113,7 +111,7 @@ Body:
 }
 
 
-Response example: 
+**Response example:** 
  [
    {
     "id": 303,
@@ -159,7 +157,7 @@ Response example:
 ]
 
 
-Other API components
+## Other API components
 
 Along with the audit database, the API will soon enable reaching the database of DeFi scams and the Smart Contract Weaknesspedia, containing information about all currently known smart contract code vulnerabilities, including DeFi-specific ones.  
 
