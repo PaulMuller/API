@@ -10,14 +10,14 @@ The API allows users to get information on about 300 projects running on differe
 
 **The information available with the API includes:**
 
-Project name
-Token ticker and address
-Chain name
-Auditor name
-Number of security issues revealed during the auditing
-Security scoring (if provided by the auditor)
-Audit date 
-Link to the pdf file containing the audit report, which can be easily downloaded.
++ Project name
++ Token ticker and address
++ Chain name
++ Auditor name
++ Number of security issues revealed during the auditing
++ Security scoring (if provided by the auditor)
++ Audit date 
++ Link to the pdf file containing the audit report, which can be easily downloaded.
 
 Each audit provider has its own approach to the project safety analysis. Some auditors only perform automated checks, others do manual reviews or combine automated and manual techniques.
 
