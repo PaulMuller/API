@@ -49,12 +49,13 @@ Body:
 ```
 **Response example:** 
 
-{ <br/>
-  "message": "Registration successful.", <br/>
-  "status": true, <br/>
-  "token": "f3299a75-7rd3-20a8-ab02-b34f7172dac7" <br/>
-} <br/>
-
+```yaml
+{
+  "message": "Registration successful.",
+  "status": true,
+  "token": "f3299a75-7rd3-20a8-ab02-b34f7172dac7"
+}
+```
 
 After the registration is completed, you will receive the token enabling further requests for other API endpoints.
 
@@ -69,29 +70,33 @@ URL: https://api.safe.defiyield.app/audit/list
 Method: POST
 
 Headers:
-
+```yaml
 Authorization: Bearer ${yourToken}
-
-Body:{}
-
+```
+Body:
+```yaml
+{}
+```
 
 **Response example:** 
 
-[ <br/>
-  { <br/>
-"project_name": "Pickle Finance", <br/>
-"project_link": "https://pickle.finance/", <br/>
-"token_ticker": "PICKLE", <br/>
-"token_address":"0x429881672B9AE42b8EbA0E26cD9C73711b891Ca5" <br/>
-   },<br/>
-   {<br/>
-     "project_name": "ARMOR",<br/>
-     "project_link": "https://armor.fi/",<br/>
-     "token_ticker": "ARMOR",<br/>
-     "token_address": "0x1337def16f9b486faed0293eb623dc8395dfe46a"<br/>
-    }<br/>
-  }<br/>
-]<br/>
+```yaml
+[
+  {
+"project_name": "Pickle Finance",
+"project_link": "https://pickle.finance/",
+"token_ticker": "PICKLE",
+"token_address":"0x429881672B9AE42b8EbA0E26cD9C73711b891Ca5"
+   },
+   {
+     "project_name": "ARMOR",
+     "project_link": "https://armor.fi/",
+     "token_ticker": "ARMOR",
+     "token_address": "0x1337def16f9b486faed0293eb623dc8395dfe46a"
+    }
+  }
+]
+```
 
 
 ## Audits by token addresses
@@ -105,63 +110,67 @@ URL: https://api.safe.defiyield.app/audit/address
 Method: POST
 
 Headers:
-
+```yaml
 Authorization: Bearer ${yourToken}
+```
 
-Body:<br/>
-{<br/>
-  “addresses”: [<br/>
-      “0xBf494F02EE3FdE1F20BEE6242bCe2d1ED0c15e47”,<br/>
-      ”0x40304195abab064a0f4444acb6e7556d9f492b98”<br/>
-  ]<br/>
-}<br/>
-
+Body:
+```yaml
+{
+  “addresses”: [
+      “0xBf494F02EE3FdE1F20BEE6242bCe2d1ED0c15e47”,
+      ”0x40304195abab064a0f4444acb6e7556d9f492b98”
+  ]
+}
+```
 
 **Response example:** 
 
- [<br/>
-   {<br/>
-    "id": 303,<br/>
-    "project_name": "ARMOR",<br/>
-    "project_link": "https://armor.fi/",<br/>
-    "logo_link": "safe/files/audit/logo/60a7fd7a67f6f.png",<br/>
-    "token_ticker": "ARMOR",<br/>
-    "token_address": "0x1337def16f9b486faed0293eb623dc8395dfe46a",<br/>
-    "network": {<br/>
-      "id": 1,<br/>
-      "name": "Ethereum"<br/>
-    },<br/>
-    "auditFile": [<br/>
-      {<br/>
-        "id": 298,<br/>
-        "name": null,<br/>
-        "score": null,<br/>
-        "tech_issues": null,<br/>
-        "tech_issues_low": null,<br/>
-        "tech_issues_medium": null,<br/>
-        "tech_issues_high": null,<br/>
-        "date": null,<br/>
-        "audit_link": null<br/>
-      }<br/>
-    ],<br/>
-    "partnerAudits": [<br/>
-      {<br/>
-        "id": 355,<br/>
-        "name": "Smart contracts",<br/>
-        "tech_issues": 5,<br/>
-        "tech_issues_low": null,<br/>
-        "tech_issues_medium": null,<br/>
-        "tech_issues_high": null,<br/>
-        "date": "2021-01-14",<br/>
-        "audit_link": "safe/files/audit/pdf/HAECHI_AUDIT_Armor_Smart_Contract_Audit_Report_v2_0_1.pdf",<br/>
-        "partner": {<br/>
-          "id": 19,<br/>
-          "name": "Haechi"<br/>
-        }<br/>
-      }<br/>
-    ]<br/>
-  }<br/>
-]<br/>
+```yaml
+ [
+   {
+    "id": 303,
+    "project_name": "ARMOR",
+    "project_link": "https://armor.fi/",
+    "logo_link": "safe/files/audit/logo/60a7fd7a67f6f.png",
+    "token_ticker": "ARMOR",
+    "token_address": "0x1337def16f9b486faed0293eb623dc8395dfe46a",
+    "network": {
+      "id": 1,
+      "name": "Ethereum"
+    },
+    "auditFile": [
+      {
+        "id": 298,
+        "name": null,
+        "score": null,
+        "tech_issues": null,
+        "tech_issues_low": null,
+        "tech_issues_medium": null,
+        "tech_issues_high": null,
+        "date": null,
+        "audit_link": null
+      }
+    ],
+    "partnerAudits": [
+      {
+        "id": 355,
+        "name": "Smart contracts",
+        "tech_issues": 5,
+        "tech_issues_low": null,
+        "tech_issues_medium": null,
+        "tech_issues_high": null,
+        "date": "2021-01-14",
+        "audit_link": "safe/files/audit/pdf/HAECHI_AUDIT_Armor_Smart_Contract_Audit_Report_v2_0_1.pdf",
+        "partner": {
+          "id": 19,
+          "name": "Haechi"
+        }
+      }
+    ]
+  }
+]
+```
 
 
 ## Other API components
