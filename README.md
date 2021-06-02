@@ -41,12 +41,12 @@ URL: https://api.safe.defiyield.app/user/register
 Method: POST
 
 Body:
-
-{ <br/>
-  “username”: “string” <br/>
-  “email”: “string” <br/>
-} <br/>
-
+```yaml
+{
+  “username”: “string”
+  “email”: “string”
+}
+```
 **Response example:** 
 
 { <br/>
