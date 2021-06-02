@@ -67,6 +67,7 @@ Calling the audit endpoint returns the list of audits.
 **Audit list request example:**
 
 URL: https://api.safe.defiyield.app/audit/list
+
 Method: POST
 
 Headers:
@@ -107,6 +108,7 @@ This endpoint requires a token address(es) and returns a list of audits availabl
 **Request example for audits by token addresses:**
 
 URL: https://api.safe.defiyield.app/audit/address
+
 Method: POST
 
 Headers:
